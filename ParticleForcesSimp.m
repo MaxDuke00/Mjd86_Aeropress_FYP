@@ -1,6 +1,5 @@
 function [Fx,Fy,Fz,Ground,TouchNearGround,CentreNearGround,P1P2] = ParticleForcesSimp(X,Y,Z,r,Eeqpw,Eeqpp,Reqpp,CentreNearGrounded)
-%UNTITLED3 Summary of this function goes here
-%   Detailed explanation goes here
+
 
 %% Initialisation
 Knpw = zeros(length(r),1);
