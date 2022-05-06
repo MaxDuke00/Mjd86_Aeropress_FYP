@@ -1,12 +1,12 @@
 function [LocVel,Fu,Fv,Fw] = AnsysPostData(filename)
 %UNTITLED4 Summary of this function goes here
 %   Detailed explanation goes here
-location = 'C:\Users\maxdu\OneDrive\Documents\University\Year 4\Final Year Project\Final Year Report\AeropressAnsys_files\user_files\';
+% location = 'C:\Users\maxdu\OneDrive\Documents\University\Year 4\Final Year Project\Final Year Report\AeropressAnsys_files\user_files\';
+% 
+% filenameLocation = append(location,filename);
 
-filenameLocation = append(location,filename);
-
-CSVFile = readtable(filenameLocation);
-
+%CSVFile = readtable(filenameLocation);
+load VelocityCSVData
 
 z = CSVFile.X_M_ - max(CSVFile.X_M_);
 x = CSVFile.Y_M_;
